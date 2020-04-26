@@ -87,3 +87,18 @@ deleteButton.onclick = function(){
         });
     }
 }
+
+var copyButton = document.getElementById("copy-url-button");
+copyButton.onclick = function(){
+    var copyObject = document.createElement('input');
+    var copyText = window.location.href;
+    document.body.appendChild(copyObject);
+    copyObject.value = copyText;
+    copyObject.select();
+    copyObject.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    copyButton.classList.remove('btn-primary');
+    copyButton.classList.add('btn-success');
+    copyButton.innerHTML = "Copied";
+    document.body.removeChild(copyObject);
+}
