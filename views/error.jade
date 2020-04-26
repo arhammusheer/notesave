@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  div.container
+    br
+    h1.text-danger= message + ' - ' + error.status
+    pre #{error.stack}

@@ -1,0 +1,11 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.very-rounded{
+  border-radius: 2rem !important;
+}
+
+.padded{
+  padding: 2rem !important;
+}
