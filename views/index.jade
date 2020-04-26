@@ -6,4 +6,30 @@ block content
     br
     h1= title
     p Welcome to #{title}
+    br
+    div.row
+      div.col-md-8
+        div.card.very-rounded
+          div.card-body
+            h5= "Enter Note Name"
+            .input-group
+              input.form-control#note-name-input(type="text")
+              input.btn.btn-primary.input-group-append#note-name-submit(type="button", value="submit")
+      div.col-md
+        .card.very-rounded
+          .card-body
+            h4="How it works?"
+            br
+            h6="1. Name your note anything in the URL"
+            code="https://notesave.ml/notepad/[notename]"
+            br
+            br
+            h6="2. Copy the url and share with anyone"
+            br
+            h6="3. Your note stays shows up anywhere you load it"
+
+
+  script(src='/javascripts/newNote.js')
+
+    
   
